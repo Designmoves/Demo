@@ -1,0 +1,6 @@
+<?php
+$serviceManager = $this->getHelperPluginManager()->getServiceLocator();
+$application    = $serviceManager->get('Application');
+$routeMatch     = $application->getMvcEvent()->getRouteMatch();
+
+var_dump($routeMatch);

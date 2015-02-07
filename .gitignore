@@ -1,7 +1,7 @@
 # PHPUnit files   #
 ###################
 # Ignore code coverage report
-test/clover.xml
+tests/clover.xml
 # Ignore custom phpunit.xml config
 test/phpunit.xml
 

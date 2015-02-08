@@ -32,17 +32,15 @@
 ini_set('display_errors', 1);
 error_reporting(-1);
 
-$files = array(
-    __DIR__ . '/../vendor/autoload.php',
-    __DIR__ . '/../../../vendor/autoload.php',
-);
-foreach ($files as $file) {
+$dir = __DIR__;
+do {
+    $file = $dir . '/vendor/autoload.php';
     if (is_file($file)) {
         $loader = require $file;
 
         break;
     }
-}
+} while($dir = dirname($dir));
 
 if (!isset($loader)) {
     throw new RuntimeException('vendor/autoload.php could not be found. Did you run `php composer.phar install`?');
@@ -60,4 +58,4 @@ foreach ($paths as $namespace => $path) {
     $loader->add($namespace, $path);
 }
 
-unset($files, $file, $loader, $namespace, $paths, $path);
+unset($dir, $file, $loader, $namespace, $paths, $namespace, $path);

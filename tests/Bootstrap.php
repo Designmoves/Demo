@@ -40,7 +40,7 @@ do {
 
         break;
     }
-} while($dir = dirname($dir));
+} while ($dir = dirname($dir));
 
 if (!isset($loader)) {
     throw new RuntimeException('vendor/autoload.php could not be found. Did you run `php composer.phar install`?');

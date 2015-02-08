@@ -38,7 +38,6 @@ use Zend\Http\Response as HttpResponse;
 use Zend\Mvc\MvcEvent;
 use Zend\Mvc\Router\RouteMatch;
 
-
 /**
  * @coversDefaultClass Designmoves\Demo\Controller\IndexController
  */

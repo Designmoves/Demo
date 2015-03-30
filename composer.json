@@ -32,9 +32,6 @@
     "autoload": {
         "psr-4": {
             "Designmoves\\Demo\\": "src/"
-        },
-        "classmap": [
-            "Module.php"
-        ]
+        }
     }
 }

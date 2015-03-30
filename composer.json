@@ -30,8 +30,8 @@
         "satooshi/php-coveralls": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "Designmoves\\Demo": "src/"
+        "psr-4": {
+            "Designmoves\\Demo\\": "src/"
         },
         "classmap": [
             "Module.php"
